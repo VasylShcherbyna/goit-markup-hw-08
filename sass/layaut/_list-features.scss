@@ -1,13 +1,13 @@
 .list-features-svg {
-  display: flex;
-  flex-wrap: wrap;
+  //display: flex;
+  //flex-wrap: wrap;
 }
 .list-features {
   flex-direction: column;
 }
-.list-features:not(:last-child) {
-  margin-right: 30px;
-}
+// .list-features:not(:last-child) {
+//   margin-right: 30px;
+// }
 .features-icon {
   @extend %align;
   width: 450px;
@@ -20,5 +20,5 @@
   height: 70px;
 }
 .features {
-  padding: 94px 0;
+  padding: 0;
 }

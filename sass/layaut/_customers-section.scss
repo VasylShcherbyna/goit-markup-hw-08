@@ -1,22 +1,27 @@
 .customers-section {
-  padding: 94px 0;
+  //padding: 94px 0;
 }
 .customers-title {
   @include font($fs: 36px, $lh: 1.16);
-  margin-bottom: 50px;
+  //margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
 .list-customers {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.customers:not(:last-child) {
-  margin-right: 30px;
-}
+// .customers:not(:last-child) {
+//   margin-right: 30px;
+// }
 .customers {
-  width: 170px;
+  // width: 170px;
   height: 90px;
+  width: 210px;
+  margin-bottom: 30px;
 }
 .logo-1 {
   @include logo(44px, 49px, #afb1b8);

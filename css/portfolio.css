@@ -51,7 +51,7 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 448px;
+    width: 480px;
     margin: 0 auto;
   }
 }
@@ -404,7 +404,6 @@ button.current {
   font-size: 14px;
   line-height: 1.14;
   color: var(--title-text-color);
-  text-align: center;
 }
 
 .text-p {
@@ -417,22 +416,6 @@ button.current {
 
 .subtitle {
   font-size: 18px;
-}
-
-.main-li {
-  list-style-type: none;
-  font-style: normal;
-  text-align: center;
-}
-
-.main-li .caption {
-  text-align: center;
-  font-weight: 700;
-  font-size: inherit;
-  line-height: 1.143;
-  margin-bottom: 10px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
 .logo-link {
