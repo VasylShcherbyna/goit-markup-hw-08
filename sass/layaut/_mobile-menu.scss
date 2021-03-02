@@ -1,0 +1,45 @@
+.mobile-close-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 8px;
+  right: 8px;
+}
+.close-icon {
+  width: 19px;
+  height: 19px;
+}
+.mobile-menu {
+  position: absolute;
+  width: 100%;
+  max-width: 480px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+  padding: 48px 40px;
+  transition: transform 500ms linear;
+}
+.mobile-menu.is-open {
+  transform: translateX(-50%) translateY(0%);
+}
+
+@media screen and (min-width: 768px) {
+  .icon-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  .navigation-list {
+    display: flex;
+    align-items: center;
+  }
+}

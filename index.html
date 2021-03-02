@@ -20,7 +20,7 @@
                 <li class="header-li item"><a href="#" class="nav-ul link-main container-kontakty transition nav-link">Контакты</a></li>
             </ul>
         </nav>
-        <button class="nav-btn" type="button">
+        <button class="nav-btn" type="button" data-menu-button>
             <svg class="nav-btn-icon">
                 <use href="./img/sprite.svg#icon-menu"></use>
               </svg>
@@ -41,6 +41,25 @@
                         </svg>
                         +38 096 111 11 11
                     </a>
+                </li>
+            </ul>
+        </div>
+        <!-- MOBILE-MENU -->
+        <div class="mobile-menu" data-menu>
+            <button type="button" class="mobile-close-btn" data-menu-close>
+                <svg class="close-icon">
+                    <use href="./img/sprite.svg#icon-close1"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu-nav list">
+                <li class="mobile-menu-nav-item">
+                    <a href="" class="mobile-menu-nav-link link">Студия</a>
+                </li>
+                <li class="mobile-menu-nav-item">
+                    <a href="" class="mobile-menu-nav-link link">ПОРТФОЛИО</a>
+                </li>
+                <li class="mobile-menu-nav-item">
+                    <a href="" class="mobile-menu-nav-link link">Контакты</a>
                 </li>
             </ul>
         </div>
@@ -564,6 +583,7 @@
             </div>
      </div>
      <script src="./modal.js"></script>
+     <script src="./mobile-menu.js"></script>
     
 </body>
 </html>

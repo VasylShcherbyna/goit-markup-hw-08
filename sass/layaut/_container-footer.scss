@@ -39,11 +39,16 @@
   display: block;
   padding: 0;
   margin-bottom: 20px;
+  text-decoration: none;
 }
 
 .footer-list {
   .link-m {
     margin-bottom: 9px;
+    text-decoration: none;
+  }
+  .link-t {
+    text-decoration: none;
   }
   .footer-hover:hover,
   .footer-hover:focus {
@@ -79,6 +84,7 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
   }
 }
 
