@@ -1,15 +1,13 @@
 .main-li {
   list-style-type: none;
   font-style: normal;
+  text-align: center;
 
   .caption {
-    @include font($fw: 700, $fs: inherit, $lh: 1.143);
     text-align: center;
+    @include font($fw: 700, $fs: inherit, $lh: 1.143);
     margin-bottom: 10px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
-}
-.caption{
-  text-align: center;
 }
