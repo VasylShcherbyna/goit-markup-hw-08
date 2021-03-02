@@ -151,7 +151,7 @@ body {
 
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .social-list-icon {
@@ -490,8 +490,17 @@ body {
 }
 
 .container-footer {
+  display: flex;
   background: #2f303a;
   padding: 60px 0;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.container-footer .social-list {
+  margin-bottom: 60px;
 }
 
 .footer-social:not(:last-child) {
@@ -507,12 +516,6 @@ body {
   fill: var(--akcent-background);
 }
 
-.flex {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
 .footer-title {
   font-weight: 700;
   font-size: 14px;
@@ -521,10 +524,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-.footer-box {
-  margin-left: 70px;
 }
 
 .logo-footer {
@@ -561,17 +560,17 @@ body {
 }
 
 .footer-address {
+  margin-bottom: 60px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
 .footer-address .text-p {
-  margin-bottom: 9px;
   color: var(--color-background--container);
+  margin-bottom: 8px;
 }
 
 .footer-address .link-main {
-  display: block;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -584,11 +583,27 @@ body {
 }
 
 .container-form {
-  margin-left: 93px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .box-mail {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .form-mail {
@@ -601,13 +616,13 @@ body {
   border-radius: 4px;
   background: #2f303a;
   color: var(--akcent-background);
+  margin-bottom: 20px;
 }
 
 .title-form {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  display: block;
   margin-bottom: 20px;
   font-style: normal;
   letter-spacing: 0.03em;
@@ -619,7 +634,6 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
-  margin-left: 12px;
   padding: 10px 29px;
   width: 200px;
   height: 50px;
