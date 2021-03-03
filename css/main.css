@@ -437,6 +437,7 @@ body {
 .container-item {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 
 .container-item .main-li {
@@ -445,8 +446,11 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.container-item .main-li:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .container-item .main-li {
+    margin: 15px;
+    width: calc((100% - 15px * 4) / 2);
+  }
 }
 
 .nav-btn {
@@ -653,7 +657,6 @@ body {
 }
 
 .features-icon {
-  width: 450px;
   height: 120px;
   background: #f5f4fa;
   margin-bottom: 30px;

@@ -23,7 +23,7 @@
 .list-portfolio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  //justify-content: center;
 
   .main-li {
     align-items: flex-start;
@@ -37,6 +37,13 @@
   //  ' .main-li:not(:nth-child(3n)) {
   //     margin-right: 30px;
   //   }'
+}
+@media screen and (min-width: 768px) {
+  .list-portfolio {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .portfolio-overlay {
@@ -80,4 +87,16 @@
 .text-p a {
   display: block;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 768px) {
+  .items-button {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .list-portfolio .main-li {
+    width: calc((100% - 15px * 4) / 2);
+    margin: 15px;
+  }
 }

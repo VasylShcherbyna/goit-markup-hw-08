@@ -300,7 +300,6 @@ body {
 .list-portfolio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .list-portfolio .main-li {
@@ -312,6 +311,14 @@ body {
 
 .list-portfolio .subtitle {
   margin-bottom: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-portfolio {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .portfolio-overlay {
@@ -359,6 +366,20 @@ body {
 .text-p a {
   display: block;
   color: var(--primary-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .items-button {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-portfolio .main-li {
+    width: calc((100% - 15px * 4) / 2);
+    margin: 15px;
+  }
 }
 
 .container-footer {
