@@ -93,7 +93,7 @@ body {
 .nav-btn {
   background-color: transparent;
   padding: 0;
-  border: transparent;
+  border: none;
 }
 
 .nav-btn-icon {
@@ -506,5 +506,10 @@ button.current {
 
 .social-list-link:hover, .social-list-link:focus {
   background-color: var(--color-focus);
+}
+
+.decor {
+  text-decoration: none;
+  list-style-type: none;
 }
 /*# sourceMappingURL=portfolio.css.map */

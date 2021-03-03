@@ -1,19 +1,23 @@
 .mobile-close-btn {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  background-color: transparent;
+  border: none;
   top: 8px;
   right: 8px;
 }
+.mobile-close-btn:hover .close-icon,
+.mobile-close-btn:focus .close-icon {
+  fill: var(--accent-color);
+}
 .close-icon {
-  width: 19px;
-  height: 19px;
+  width: 40px;
+  height: 40px;
 }
 .mobile-menu {
   position: absolute;
   width: 100%;
   max-width: 480px;
-  height: 100%;
+  //height: 100vh;
   top: 0;
   left: 50%;
   transform: translateX(-50%) translateY(-100%);
@@ -23,6 +27,66 @@
   padding: 48px 40px;
   transition: transform 500ms linear;
 }
+.li-studio {
+  margin-bottom: 32px;
+  .link-studio {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+}
+.li-portfolio {
+  margin-bottom: 35px;
+  .link-portfolio {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+}
+.li-contacty {
+  margin-bottom: 302px;
+  .link-contacty {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+}
+.li-tel {
+  margin-bottom: 32px;
+  .link-tel {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+}
+.li-mail {
+  margin-bottom: 64px;
+  .link-mail {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+  }
+}
+
 .mobile-menu.is-open {
   transform: translateX(-50%) translateY(0%);
 }
@@ -42,4 +106,24 @@
     display: flex;
     align-items: center;
   }
+}
+.menu-social {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-social-item {
+  display: flex;
+  .menu-social-link {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22222;
+    letter-spacing: 0.02em;
+    color: var(--akcent-color);
+  }
+}
+.vertical-line {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
+  margin-left: 10px;
 }
