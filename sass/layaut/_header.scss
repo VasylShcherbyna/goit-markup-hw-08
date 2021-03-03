@@ -3,18 +3,12 @@
   padding: 0;
   border: none;
 }
+
 .nav-btn-icon {
   width: 40px;
   height: 40px;
 }
-@media screen and (max-width: 767px) {
-  .list {
-    display: none;
-  }
-}
-.list-contakty {
-  display: none;
-}
+
 .box-nav {
   display: flex;
   align-items: center; /*Вирівнювання контейнерів по центру*/
@@ -116,12 +110,58 @@
 }
 .header-nav {
   display: flex;
-}
-.list-contakty .link-main {
-  @extend %align;
-  display: flex;
-  padding: 40px 0;
-  height: 16px;
-  justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .list {
+    display: none;
+  }
+  .list-contakty {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-btn {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .list-contakty {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .list-contakty {
+    flex-direction: column;
+  }
+  .list-mail {
+    margin-bottom: 10px;
+  }
+  .logo-link {
+    margin-right: 88px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-contakty {
+    align-items: center;
+  }
+  .list-contakty .link-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 40px 0;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+  }
 }

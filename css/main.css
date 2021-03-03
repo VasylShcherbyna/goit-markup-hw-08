@@ -84,7 +84,7 @@ body {
   display: none;
 }
 
-.social-list-link, .list-contakty .link-main, .features-icon, .link-customers {
+.social-list-link, .features-icon, .link-customers {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,9 +105,12 @@ body {
   color: var(--color-focus);
 }
 
-.box-nav .logo-link {
-  padding-top: 16px;
-  padding-bottom: 16px;
+@media screen and (min-width: 1200px) {
+  .box-nav .logo-link {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-right: 93px;
+  }
 }
 
 .studio {
@@ -457,16 +460,6 @@ body {
   height: 40px;
 }
 
-@media screen and (max-width: 767px) {
-  .list {
-    display: none;
-  }
-}
-
-.list-contakty {
-  display: none;
-}
-
 .box-nav {
   display: flex;
   align-items: center;
@@ -582,14 +575,77 @@ body {
 
 .header-nav {
   display: flex;
+  align-items: center;
 }
 
-.list-contakty .link-main {
-  display: flex;
-  padding: 40px 0;
-  height: 16px;
-  justify-content: center;
-  align-items: center;
+@media screen and (max-width: 767px) {
+  .list {
+    display: none;
+  }
+  .list-contakty {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-btn {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-contakty {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .list-contakty {
+    flex-direction: column;
+  }
+  .list-mail {
+    margin-bottom: 10px;
+  }
+  .logo-link {
+    margin-right: 88px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-contakty {
+    align-items: center;
+  }
+  .list-contakty .link-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 40px 0;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-features-svg {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-features {
+    flex-basis: calc((100% - 15px * 4) / 2);
+    margin: 15px;
+  }
 }
 
 .list-features {
