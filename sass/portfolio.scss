@@ -8,10 +8,14 @@
 @import "./utils/mixin";
 
 //LAYOUT
+@import "./components/main-li";
 @import "./layaut/header";
+@import "./layaut/modal-icon";
+
 @import "./layaut/section-portfolio";
 @import "./layaut/container-footer";
 @import "./layaut/container-form";
+@import "./layaut/mobile-menu";
 
 //COMPONENTS
 @import "./components/button-portfolio";

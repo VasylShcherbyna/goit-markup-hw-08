@@ -40,7 +40,6 @@ body {
 .container {
   width: 100%;
   padding: 0 15px;
-  outline: 1px solid red;
 }
 
 .header .container {
@@ -120,21 +119,6 @@ body {
   font-family: var(--font-family);
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-}
-
-.main-li {
-  list-style-type: none;
-  font-style: normal;
-  margin-bottom: 30px;
-}
-
-.main-li .caption {
-  text-align: center;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
 .text-title {
@@ -312,7 +296,7 @@ body {
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   width: 100%;
   max-width: 480px;
   top: 0;
