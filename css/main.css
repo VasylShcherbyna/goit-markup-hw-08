@@ -224,7 +224,7 @@ body {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/Mobile/optimision/Header img.png");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/Mobile/optimision/Header-img.png");
   }
 }
 
@@ -313,7 +313,7 @@ body {
 .mobile-menu {
   position: fixed;
   width: 100%;
-  max-width: 480px;
+  height: 100%;
   top: 0;
   left: 50%;
   transform: translateX(-50%) translateY(-100%);
