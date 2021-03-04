@@ -122,16 +122,16 @@
     padding: 60px 0;
     background: #2f303a;
   }
-   .wrap {
-     margin-right: 93px;
-   }
+  .wrap {
+    margin-right: 93px;
+  }
   .logo-footer {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19231;
     letter-spacing: 0.03em;
   }
- 
+
   .flex {
     display: flex;
     align-items: baseline;
@@ -139,5 +139,14 @@
   }
   .footer-box {
     margin-left: 70px;
+  }
+  .footer-address .text-p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+
+    letter-spacing: 0.03em;
   }
 }

@@ -100,3 +100,14 @@
     margin: 15px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .section-portfolio {
+    padding: 94px 0;
+  }
+  .items-button {
+    margin-bottom: 55px;
+  }
+  .list-portfolio .main-li {
+    width: calc((100% - 15px * 6) / 3);
+  }
+}
