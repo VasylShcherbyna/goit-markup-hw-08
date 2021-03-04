@@ -107,8 +107,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .box-nav .logo-link {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     margin-right: 93px;
   }
 }
@@ -139,15 +139,15 @@ body {
 
 .text-title {
   font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 16px;
+  line-height: 1.18;
   color: var(--title-text-color);
 }
 
 .text-p {
   display: block;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 16px;
+  line-height: 1.81;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -231,7 +231,6 @@ body {
 
 .container-button {
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   padding: 200px 0;
   text-align: center;
@@ -240,6 +239,8 @@ body {
 }
 
 .container-button h1 {
+  margin-right: auto;
+  margin-left: auto;
   display: block;
   margin-bottom: 30px;
   font-size: 26px;
@@ -268,6 +269,23 @@ body {
   border-radius: 4px;
   cursor: pointer;
   /* cursor */
+}
+
+@media screen and (min-width: 1200px) {
+  .container-button {
+    max-width: 1600px;
+    height: 600px;
+  }
+  .container-button h1 {
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36364;
+    letter-spacing: 0.06em;
+    max-width: 696px;
+  }
 }
 
 .decor {
@@ -453,6 +471,17 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .aside {
+    padding: 94px 0;
+    margin: 0;
+  }
+  .container-item .main-li {
+    margin: 15px;
+    width: calc((100% - 15px * 8) / 4);
+  }
+}
+
 .nav-btn {
   background-color: transparent;
   padding: 0;
@@ -491,10 +520,12 @@ body {
 }
 
 .nav-ul {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   /* Жирное начертание */
-  font-size: 14px;
-  line-height: 1.19;
+  font-size: 12px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
@@ -555,7 +586,6 @@ body {
 .list-mail {
   display: flex;
   align-items: center;
-  margin-right: 50px;
 }
 
 .list-tel {
@@ -605,6 +635,10 @@ body {
     display: flex;
     margin-left: auto;
   }
+  .list {
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -627,13 +661,13 @@ body {
   }
   .list-contakty .link-main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    display: flex;
     padding: 40px 0;
     height: 16px;
     justify-content: center;
     align-items: center;
+  }
+  .contakty:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
@@ -671,6 +705,16 @@ body {
   padding: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .features {
+    padding: 0;
+    margin-bottom: 94px;
+  }
+  .list-features {
+    flex-basis: calc((100% - 15px * 8) / 4);
+  }
+}
+
 .title-post {
   display: block;
   margin-bottom: 50px;
@@ -682,7 +726,6 @@ body {
 }
 
 .doing-section {
-  display: none;
   padding-top: 0;
   padding-bottom: 94px;
 }
@@ -726,6 +769,12 @@ body {
   color: #ffffff;
 }
 
+@media screen and (max-width: 1200px) {
+  .doing-section {
+    display: none;
+  }
+}
+
 .our-team {
   text-align: center;
   padding: 30px 32px;
@@ -747,10 +796,21 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .customers-section {
+    padding: 94px 0;
+  }
+  .customers-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.167;
+  }
+}
+
 .customers-title {
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.179;
   margin-bottom: 30px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -826,18 +886,38 @@ body {
   border-color: var(--color-focus);
 }
 
-.container-footer {
-  display: flex;
-  background: #2f303a;
-  padding: 60px 0;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .customers-section {
+    padding: 94px 0;
+  }
+  .customers-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.167;
+  }
+  .customers {
+    flex-basis: calc((100% - 15px * 12) / 6);
+    height: 90px;
+    margin: 15px;
+  }
 }
 
-.container-footer .social-list {
-  margin-bottom: 60px;
+@media screen and (max-width: 1200px) {
+  .container-footer {
+    display: flex;
+    background: #2f303a;
+    padding: 60px 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .container-footer .social-list {
+    margin-bottom: 60px;
+  }
+  .footer-address {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-social:not(:last-child) {
@@ -903,7 +983,6 @@ body {
 }
 
 .footer-address {
-  margin-bottom: 60px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -955,23 +1034,48 @@ body {
   }
 }
 
-.container-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .container-footer {
+    padding: 60px 0;
+    background: #2f303a;
+  }
+  .wrap {
+    margin-right: 93px;
+  }
+  .logo-footer {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19231;
+    letter-spacing: 0.03em;
+  }
+  .flex {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .footer-box {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .box-mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .footer-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-
-.box-mail {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1026,6 +1130,39 @@ body {
   width: 24px;
   height: 24px;
   margin-left: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .container-form {
+    margin-left: auto;
+  }
+  .box-mail {
+    display: flex;
+  }
+  .contact-form-btn {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.88;
+    margin-left: 12px;
+    padding: 10px 29px;
+    width: 200px;
+    height: 50px;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .contact-form-btn .footer-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
 }
 
 .backdrop {

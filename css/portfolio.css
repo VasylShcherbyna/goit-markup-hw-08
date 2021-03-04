@@ -128,10 +128,12 @@ body {
 }
 
 .nav-ul {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   /* Жирное начертание */
-  font-size: 14px;
-  line-height: 1.19;
+  font-size: 12px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
@@ -192,7 +194,6 @@ body {
 .list-mail {
   display: flex;
   align-items: center;
-  margin-right: 50px;
 }
 
 .list-tel {
@@ -242,6 +243,10 @@ body {
     display: flex;
     margin-left: auto;
   }
+  .list {
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -264,13 +269,13 @@ body {
   }
   .list-contakty .link-main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    display: flex;
     padding: 40px 0;
     height: 16px;
     justify-content: center;
     align-items: center;
+  }
+  .contakty:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
@@ -382,18 +387,22 @@ body {
   }
 }
 
-.container-footer {
-  display: flex;
-  background: #2f303a;
-  padding: 60px 0;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-
-.container-footer .social-list {
-  margin-bottom: 60px;
+@media screen and (max-width: 1200px) {
+  .container-footer {
+    display: flex;
+    background: #2f303a;
+    padding: 60px 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .container-footer .social-list {
+    margin-bottom: 60px;
+  }
+  .footer-address {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-social:not(:last-child) {
@@ -459,7 +468,6 @@ body {
 }
 
 .footer-address {
-  margin-bottom: 60px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -511,23 +519,48 @@ body {
   }
 }
 
-.container-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .container-footer {
+    padding: 60px 0;
+    background: #2f303a;
+  }
+  .wrap {
+    margin-right: 93px;
+  }
+  .logo-footer {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19231;
+    letter-spacing: 0.03em;
+  }
+  .flex {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .footer-box {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .box-mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .footer-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-
-.box-mail {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -584,6 +617,39 @@ body {
   margin-left: 10px;
 }
 
+@media screen and (min-width: 1200px) {
+  .container-form {
+    margin-left: auto;
+  }
+  .box-mail {
+    display: flex;
+  }
+  .contact-form-btn {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.88;
+    margin-left: 12px;
+    padding: 10px 29px;
+    width: 200px;
+    height: 50px;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .contact-form-btn .footer-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
+}
+
 button.btn {
   min-width: 73px;
 }
@@ -634,15 +700,15 @@ button.current {
 
 .text-title {
   font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 16px;
+  line-height: 1.18;
   color: var(--title-text-color);
 }
 
 .text-p {
   display: block;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 16px;
+  line-height: 1.81;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -677,8 +743,8 @@ button.current {
 
 @media screen and (min-width: 1200px) {
   .box-nav .logo-link {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     margin-right: 93px;
   }
 }

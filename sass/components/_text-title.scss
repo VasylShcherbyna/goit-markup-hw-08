@@ -1,4 +1,4 @@
 .text-title {
-  @include font($fs: 14px, $lh: 1.14);
+  @include font($fs: 16px, $lh: 1.18);
   color: var(--title-text-color);
 }
