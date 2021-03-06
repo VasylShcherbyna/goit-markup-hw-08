@@ -29,6 +29,8 @@
   height: 90px;
   width: 210px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .logo-1 {
   @include logo(44px, 49px, #afb1b8);
@@ -90,8 +92,5 @@
     flex-basis: calc((100% - 15px * 12) / 6);
     height: 90px;
     margin: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    
   }
 }

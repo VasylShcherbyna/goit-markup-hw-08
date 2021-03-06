@@ -19,8 +19,11 @@ ol {
   padding: 0;
 }
 
-img {
+img,
+svg {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -831,6 +834,8 @@ body {
   height: 90px;
   width: 210px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo-1 {
@@ -904,8 +909,6 @@ body {
     flex-basis: calc((100% - 15px * 12) / 6);
     height: 90px;
     margin: 15px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
