@@ -45,8 +45,7 @@
 }
 @media screen and (min-width: 1200px) {
   .features {
-    padding: 0;
-    margin-bottom: 94px;
+    padding: 94px 0;
   }
   .list-features {
     flex-basis: calc((100% - 15px * 8) / 4);

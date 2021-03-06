@@ -19,6 +19,14 @@
   .main-li:not(:last-child) {
     margin-right: 8px;
   }
+  @media screen and (max-width: 767px) {
+    .list-btn-portfolio:nth-child(-n + 3) {
+      margin-bottom: 15px;
+    }
+  }
+  .main-li {
+    margin-bottom: 0;
+  }
 }
 .list-portfolio {
   display: flex;
