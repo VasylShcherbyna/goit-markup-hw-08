@@ -7,6 +7,7 @@
     align-items: center;
   }
   .box-mail {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,6 +16,7 @@
   }
 }
 .footer-form {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,6 +34,11 @@
   background: #2f303a;
   color: var(--akcent-background);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .form-mail {
+    width: 450;
+  }
 }
 .title-form {
   @include font($fs: 14px, $lh: 1.14);

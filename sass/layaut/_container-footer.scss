@@ -1,5 +1,6 @@
 @media screen and (max-width: 1200px) {
   .container-footer {
+    width: 100%;
     display: flex;
     background: #2f303a;
     padding: 60px 0;
@@ -110,6 +111,9 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .form-mail {
+    width: 450px;
+  }
   .wrap {
     max-width: 610px;
     margin: 0 auto;
