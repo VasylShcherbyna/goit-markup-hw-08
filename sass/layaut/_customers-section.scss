@@ -1,13 +1,4 @@
-@media screen and (min-width: 1200px) {
-  .customers-section {
-    padding: 94px 0;
-  }
-  .customers-title {
-    margin-bottom: 50px;
-    font-size: 36px;
-    line-height: 1.167;
-  }
-}
+
 .customers-title {
   @include font($fs: 28px, $lh: 1.179);
   //margin-bottom: 50px;
@@ -93,4 +84,10 @@
     height: 90px;
     margin: 15px;
   }
+}
+@media screen and (min-width: 768px) {
+  .customers-section {
+    padding: 60px 0;
+  }
+
 }

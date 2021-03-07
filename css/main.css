@@ -199,8 +199,7 @@ body {
 }
 
 .container-button {
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding: 118px 0;
   height: 400px;
   margin: 0 auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/Mobile/optimision/Header-img.png");
@@ -331,7 +330,7 @@ body {
   flex-direction: column;
   position: fixed;
   width: 100%;
-  max-width: 480px;
+  max-width: 767px;
   height: 100vh;
   top: 0;
   left: 50%;
@@ -474,7 +473,6 @@ body {
 .aside {
   background: #f5f4fa;
   padding: 60px 0;
-  margin-bottom: 60px;
 }
 
 .aside h2 {
@@ -715,11 +713,8 @@ body {
   .list-features-svg {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    padding: 60px 0;
   }
-}
-
-@media screen and (min-width: 768px) {
   .list-features {
     flex-basis: calc((100% - 15px * 4) / 2);
     margin: 15px;
@@ -844,17 +839,6 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
-  .customers-section {
-    padding: 94px 0;
-  }
-  .customers-title {
-    margin-bottom: 50px;
-    font-size: 36px;
-    line-height: 1.167;
-  }
-}
-
 .customers-title {
   font-weight: bold;
   font-size: 28px;
@@ -949,6 +933,12 @@ body {
     flex-basis: calc((100% - 15px * 12) / 6);
     height: 90px;
     margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers-section {
+    padding: 60px 0;
   }
 }
 

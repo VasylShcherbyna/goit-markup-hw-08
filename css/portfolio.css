@@ -975,7 +975,7 @@ body {
   flex-direction: column;
   position: fixed;
   width: 100%;
-  max-width: 480px;
+  max-width: 767px;
   height: 100vh;
   top: 0;
   left: 50%;
